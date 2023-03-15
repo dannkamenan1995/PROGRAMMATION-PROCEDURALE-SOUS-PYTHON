@@ -16,10 +16,10 @@ def calculeMoyenne(Algo, Python, Php, Javascript):
     return Moyenne  
 
 def Boutton_click():
-    Py = float(txtpy.get("1.0", "end-1c"))
-    Al = float(txtAl.get("1.0", "end-1c"))
-    Ph = float(txtPh.get("1.0", "end-1c"))
-    Java = float(txtJava.get("1.0", "end-1c"))
+    Py = float(txtpy.get())
+    Al = float(txtAl.get())
+    Ph = float(txtPh.get())
+    Java = float(txtJava.get())
 
     moy = calculeMoyenne(Al, Py, Ph, Java)
     moyenne_label.config(text="La moyenne de l'étudiant est : {:.2f}".format(moy))
@@ -45,22 +45,22 @@ Myframe.pack()
 
 labpy = tk.Label(Myframe, text="SAISIR LA NOTE DE PYTHON :")
 labpy.pack()
-txtpy = tk.Text(Myframe, width=20, height=1.5)
+txtpy = tk.Entry(Myframe)
 txtpy.pack()
 
 labAl = tk.Label(Myframe, text="SAISIR LA NOTE D'ALGO :")
 labAl.pack()
-txtAl = tk.Text(Myframe, width=20, height=1.5)
+txtAl = tk.Entry(Myframe)
 txtAl.pack()
 
 labPh = tk.Label(Myframe, text="SAISIR LA NOTE DE PHP :")
 labPh.pack()
-txtPh = tk.Text(Myframe, width=20, height=1.5)
+txtPh = tk.Entry(Myframe)
 txtPh.pack()
 
 labJava = tk.Label(Myframe, text="SAISIR LA NOTE DE JAVA :")
 labJava.pack()
-txtJava = tk.Text(Myframe, width=20, height=1.5)
+txtJava = tk.Entry(Myframe)
 txtJava.pack()
 
 BoutonAccepte = tk.Button(Myframe, text="Calculer la moyenne", command=Boutton_click)
