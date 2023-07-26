@@ -16,7 +16,7 @@ if i==1 :
     NombreVOITURE=int(input("Combien de voiture voulez vous louer :"))
     NombreJour=int(input("Combien de jours de location :"))
     NombreKm=int(input("Combien de Km parcouru :"))
-    PrixFinal1=(NombreJour*(TarifEssance*NombreVOITURE))+(NombreKm*KmEssance)
+    PrixFinal1=(NombreJour*(TarifEssance*NombreVOITURE))+(NombreKm*(NombreVOITURE*KmEssance))
     print("Le tarif total est :",PrixFinal1,"FCFA")
         
 
@@ -24,6 +24,6 @@ elif i==2 :
     NombreVOITURE=int(input("Combien de voiture voulez vous louer :"))
     NombreJour=int(input("Combien de jours de location :"))
     NombreKm=int(input("Combien de Km parcouru :"))
-    PrixFinal2= (NombreJour*(TarifDiesel*NombreVOITURE))+(NombreKm*KmDiesel)
+    PrixFinal2= (NombreJour*(TarifDiesel*NombreVOITURE))+(NombreKm*(NombreVOITURE*KmDiesel))
     print("Le tarif total est :",PrixFinal2,"FCFA")
         
